@@ -19,3 +19,6 @@
 
 config/database.yml
 publin/uploads
+
+# Ignore application configuration
+/config/application.yml
