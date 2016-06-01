@@ -3,9 +3,9 @@ CarrierWave.configure do |config|
 		config.storage :fog
 		config.fog_credentials = {
 			provider:              'AWS',
-			aws_access_key_id:     'AKIAJ65RFVJLBIDMI7CQ'
-			aws_secret_access_key: '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'
-			region:                'eu-west-1'
+			aws_access_key_id:     'AKIAJB35SBEH4QCCC6FA'
+			aws_secret_access_key: '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'
+			region:                'Tokyo'
 		}
 		config.fog_directory  = 'maria-artstore'
 	else
