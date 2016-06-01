@@ -1,15 +1,6 @@
 Pay2go.setup do |pay2go|
-  if Rails.env.development?
-    pay2go.merchant_id = "11444707"
-
-    pay2go.hash_key    = "Ygbaxufg1d9CPJJ4aMw40X92wACxoPRn"
-    pay2go.hash_iv     = "53xDyNTz03bPNVTX"
-    pay2go.service_url = "https://capi.pay2go.com/MPG/mpg-gateway"
-  else
-    pay2go.merchant_id = "11444707"
-
-    pay2go.hash_key    = "xxxxxxxx"
-    pay2go.hash_iv     = "xxxxxxxx"
-    pay2go.service_url = "https://api.pay2go.com/MPG/mpg_gateway"
-  end
+  pay2go.merchant_id = ENV['pay2go_merchant_id']
+  pay2go.hash_key    = ENV['pay2go_hash_key']
+  pay2go.hash_iv     = ENV['pay2go_hash_iv']
+  pay2go.service_url = ENV['pay2go_service_url']
 end
