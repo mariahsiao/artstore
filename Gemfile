@@ -47,17 +47,11 @@ gem "bootstrap-sass"
 
 gem "awesome_rails_console" # 讓你的 rails console 變整齊漂亮的 gem
 
-
-group :production do
-	gem "pg"
-	gem "rails_12factor"
-end
-
 gem "aasm"
 
-gem "roadie", "2.4.3"
-
 gem "letter_opener", group: :development
+
+gem "roadie", "2.4.3"
 
 gem "pay2go"
 

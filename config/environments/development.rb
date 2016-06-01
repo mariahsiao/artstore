@@ -43,6 +43,6 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :letter_opener
 
   config.after_initialize do
-      Pay2go.integration_mode = :development
-   end
+    Pay2go.integration_mode = :development
+  end
 end

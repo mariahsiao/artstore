@@ -1,12 +1,12 @@
 Pay2go.setup do |pay2go|
   if Rails.env.development?
-    pay2go.merchant_id = "11444707"  # 放測試站的 key
+    pay2go.merchant_id = "11444707"
 
-    pay2go.hash_key    = "vl7hcFj8PggWkqS4ZkOypq1KKWWAsSWX"
-    pay2go.hash_iv     = "e3fqJyyzPPw9goef"
-    pay2go.service_url = "https://capi.pay2go.com/MPG/mpg_gateway"
+    pay2go.hash_key    = "Ygbaxufg1d9CPJJ4aMw40X92wACxoPRn"
+    pay2go.hash_iv     = "53xDyNTz03bPNVTX"
+    pay2go.service_url = "https://capi.pay2go.com/MPG/mpg-gateway"
   else
-    pay2go.merchant_id = "1234567"  # 放正式站的 key
+    pay2go.merchant_id = "11444707"
 
     pay2go.hash_key    = "xxxxxxxx"
     pay2go.hash_iv     = "xxxxxxxx"
