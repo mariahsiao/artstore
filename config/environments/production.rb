@@ -81,7 +81,7 @@ Rails.application.configure do
     Pay2go.integration_mode = :development
   end
 
-  config.action_mailer.default_url_options = { host: 'https://ancient-cove-20520.herokuapp.com/'}
+  config.action_mailer.default_url_options = { host: 'https://git.heroku.com/artstorev1.git'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     post:           587,
