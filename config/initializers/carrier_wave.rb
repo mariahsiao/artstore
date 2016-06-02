@@ -7,7 +7,7 @@ CarrierWave.configure do |config|
 			aws_secret_access_key: ENV['aws_secret_access_key'],
 			region:                'ap-northeast-1'
 		}
-		config.fod_directory = 'maria-artstore'
+		config.fog_directory = 'maria-artstore'
 	else
 		config.storage :file
 	end
